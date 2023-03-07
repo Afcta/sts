@@ -43152,10 +43152,11 @@ ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff0000
 
 \pard\sa200\sl276\slmult1\par
 \b Branch Commands\par
-\b0 git branch #Shows which branch is the current one\par
+\b0 git branch #Shows which branch is the current one, add -a to show remote's\par
 git branch newB #Creates a new branch in the one you're in\par
 git push -u origin localBranchToRemote #Copies a new remote branch from local\par
-git checkout branch #Changes the current branch-m\par
+git checkout branch #Changes the current branch-m #If the branch exists remotely but not \par
+#locally, then it will copy the remote branch to local\par
 git branch -d branch-name #Deletes the local branch\par
 git push origin -d branch-name #Delete remote branch\par
 }
